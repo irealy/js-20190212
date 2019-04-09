@@ -1,6 +1,8 @@
 export class Block {
-  constructor (el, options) {
-    this.el = el;
+  get bemName () {
+    return 'block';
+  }
+  constructor (options) {
     this.options = options;
   }
 
@@ -8,7 +10,18 @@ export class Block {
     console.warn(`у компонента не определен шаблон`);
   }
 
-  render () {
+  /**
+   * Метод получает элемент блока по его имени, если элементов много,
+   * то вернется первый
+   * @param {string} name - имя блока
+   * @return {Element}
+   */
+  getElement (name) {
+    return this.el.querySelector(`.${this.bemName}__${name}`);
+  }
+
+  render (el) {
+    this.el = el;
     this.el.innerHTML = this.template(this.options);
   }
 }
