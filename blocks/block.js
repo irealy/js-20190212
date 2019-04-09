@@ -1,16 +1,14 @@
 export class Block {
-
-  constructor(el, options) {
+  constructor (el, options) {
     this.el = el;
     this.options = options;
   }
 
-  template() {
+  template () {
     console.warn(`у компонента не определен шаблон`);
   }
 
-  render() {
+  render () {
     this.el.innerHTML = this.template(this.options);
   }
-
 }
