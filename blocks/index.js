@@ -6,9 +6,7 @@ import { Login } from './login/login';
 import _ from './index.scss';
 /* eslint-enable */
 
-
 window.Textbox = Inputfield;
 window.Feedback = Feedback;
 // window.Auth = Auth;
 window.Login = Login;
-
