@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auth</title>
+    <script src="../../dist/toolkit.js"></script>
+</head>
+<body>
+    <div class="js-login"></div>
+    <script>
+      (function () {
+        'use strict';
+
+        const auth = new Login();
+
+        auth.render(document.querySelector('.js-login'));
+      })();
+    </script>
+</body>
+</html>

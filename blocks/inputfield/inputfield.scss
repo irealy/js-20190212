@@ -1,0 +1,10 @@
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: white; 
+  }
+}
+

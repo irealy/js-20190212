@@ -1,5 +1,5 @@
 import { Block } from '../block';
-import { Textbox } from '../textbox/textbox';
+import { Inputfield } from '../inputfield/inputfield';
 import template from './feedback.pug';
 /* eslint-disable */
 import _ from './feedback.scss';
@@ -14,7 +14,7 @@ export class Feedback extends Block {
   }
   constructor (options) {
     super(options);
-    this.userName = new Textbox({
+    this.userName = new Inputfield({
       name: 'username',
       label: 'Ваше имя',
       value: '',
@@ -22,7 +22,7 @@ export class Feedback extends Block {
     });
     
 
-    this.comment = new Textbox({
+    this.comment = new Inputfield({
       name: 'comment',
       label: 'Ваше мнение',
       value: '',

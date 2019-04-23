@@ -1,12 +1,12 @@
 import { Block } from '../block';
-import template from './textbox.pug';
+import template from './inputfield.pug';
 /* eslint-disable */
-import _ from './textbox.scss';
+import _ from './inputfield.scss';
 /* eslint-enable */
 
-export class Textbox extends Block {
+export class Inputfield extends Block {
   get bemName () {
-    return 'textbox';
+    return 'inputfield';
   }
   template (data) {
     return template(data);
