@@ -20,8 +20,6 @@ export class Feedback extends Block {
       value: '',
       required: true
     });
-    
-
     this.comment = new Inputfield({
       name: 'comment',
       label: 'Ваше мнение',

@@ -1,4 +1,4 @@
-import { Block } from '../../block';
+import { Block } from '../block';
 import template from './login.pug';
 
 export class Login extends Block {
